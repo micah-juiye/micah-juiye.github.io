@@ -2,4 +2,4 @@ title: "Micah Juiye's Website"            # The title of your website
 description: "My Personal website  "  # For search engines
 author: "Micah Juiye"                 # Your name or username
 url: "https://micah-juiye.github.io"    # Your GitHub Pages URL
-theme: mimima
+theme: minima
