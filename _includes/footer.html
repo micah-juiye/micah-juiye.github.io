@@ -1,21 +1,41 @@
-<footer class="footer">
-  <div class="container">
-    <ul class="social-links">
-      {% if site.social_links %}
-        {% for link in site.social_links %}
-          <li>
-            <a href="{{ link.user_url }}" target="_blank">
-              {% if link.platform == "github" %}
-                <i class="fab fa-github"></i> GitHub
-              {% elsif link.platform == "linkedin" %}
-                <i class="fab fa-linkedin"></i> LinkedIn
-              {% elsif link.platform == "instagram" %}
-                <i class="fab fa-instagram"></i> Instagram
-              {% endif %}
-            </a>
-          </li>
-        {% endfor %}
-      {% endif %}
-    </ul>
-  </div>
-</footer>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Micah Juiye's Website</title>
+  
+  <!-- Link to Font Awesome for social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <!-- Add other stylesheets or metadata here -->
+</head>
+<body>
+
+  <!-- Your website's main content goes here -->
+
+  <!-- Footer section -->
+  <footer class="footer">
+    <div class="container">
+      <ul class="social-links">
+        {% if site.social_links %}
+          {% for link in site.social_links %}
+            <li>
+              <a href="{{ link.user_url }}" target="_blank">
+                {% if link.platform == "github" %}
+                  <i class="fab fa-github"></i> GitHub
+                {% elsif link.platform == "linkedin" %}
+                  <i class="fab fa-linkedin"></i> LinkedIn
+                {% elsif link.platform == "instagram" %}
+                  <i class="fab fa-instagram"></i> Instagram
+                {% endif %}
+              </a>
+            </li>
+          {% endfor %}
+        {% endif %}
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
