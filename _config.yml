@@ -4,16 +4,18 @@ author: "Micah Juiye"
 url: "https://micah-juiye.github.io"
 theme: minima
 
-# Optional theme settings
 minima:
   skin: dark
-# Generate social links in footer.
-social_links:
-  - { platform: github,    user_url: "https://github.com/micah-juiye" }
-  - { platform: linkedin,  user_url: "https://linkedin.com/in/micah-juiye" }
-  - { platform: instagram, user_url: "https://instagram.com/yourusername" }
-# _config.yml
+  include:
+    - "/assets/css/custom.css"  # Link to custom CSS
 
+# Social links
+social_links:
+  - { platform: github, user_url: "https://github.com/micah-juiye" }
+  - { platform: linkedin, user_url: "https://linkedin.com/in/micah-juiye" }
+  - { platform: instagram, user_url: "https://instagram.com/yourusername" }
+
+# Plugins and SASS configuration
 plugins:
   - jekyll-sass-converter
 
@@ -21,8 +23,3 @@ sass:
   style: compressed
 
 markdown: kramdown
-
-# Include the custom CSS file
-css:
-  - "/assets/css/custom.css"
-
