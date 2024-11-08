@@ -1,12 +1,15 @@
-title: "Micah Juiye's Website"            # The title of your website
-description: "My Personal website  "  # For search engines
-author: "Micah Juiye"                 # Your name or username
-url: "https://micah-juiye.github.io"    # Your GitHub Pages URL
+title: "Micah Juiye's Website"
+description: "My Personal website"
+author: "Micah Juiye"
+url: "https://micah-juiye.github.io"
 theme: minima
+
 # Optional theme settings
 minima:
-  skin: dark       # Options: "light", "dark", or custom
-  social_links:    # Add links to your social profiles
-    github: "https://github.com/micah-juiye"
-    linkedin: "https://linkedin.com/in/micah-juiye"
-    instagram: "https://instagram.com/yourusername"
+  skin: dark
+# Generate social links in footer.
+social_links:
+  - { platform: github,    user_url: "https://github.com/micah-juiye" }
+  - { platform: linkedin,  user_url: "https://linkedin.com/in/micah-juiye" }
+  - { platform: instagram, user_url: "https://instagram.com/yourusername" }
+
