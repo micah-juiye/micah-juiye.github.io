@@ -1,30 +1,21 @@
 <footer class="footer">
   <div class="container">
     <ul class="social-links">
-      <li><a href="https://github.com/micah-juiye"><i class="fab fa-github"></i> GitHub</a></li>
-      <li><a href="https://linkedin.com/in/micah-juiye"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-      <li><a href="https://instagram.com/yourusername"><i class="fab fa-instagram"></i> Instagram</a></li>
+      {% if site.social_links %}
+        {% for link in site.social_links %}
+          <li>
+            <a href="{{ link.user_url }}" target="_blank">
+              {% if link.platform == "github" %}
+                <i class="fab fa-github"></i> GitHub
+              {% elsif link.platform == "linkedin" %}
+                <i class="fab fa-linkedin"></i> LinkedIn
+              {% elsif link.platform == "instagram" %}
+                <i class="fab fa-instagram"></i> Instagram
+              {% endif %}
+            </a>
+          </li>
+        {% endfor %}
+      {% endif %}
     </ul>
   </div>
 </footer>
-
-<footer>
-  <ul>
-    {% if site.social_links %}
-      {% for link in site.social_links %}
-        <li>
-          <a href="{{ link.user_url }}" target="_blank">
-            {% if link.platform == "github" %}
-              <i class="fab fa-github"></i> GitHub
-            {% elsif link.platform == "linkedin" %}
-              <i class="fab fa-linkedin"></i> LinkedIn
-            {% elsif link.platform == "instagram" %}
-              <i class="fab fa-instagram"></i> Instagram
-            {% endif %}
-          </a>
-        </li>
-      {% endfor %}
-    {% endif %}
-  </ul>
-</footer>
-
