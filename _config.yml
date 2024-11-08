@@ -3,3 +3,10 @@ description: "My Personal website  "  # For search engines
 author: "Micah Juiye"                 # Your name or username
 url: "https://micah-juiye.github.io"    # Your GitHub Pages URL
 theme: minima
+# Optional theme settings
+minima:
+  skin: dark       # Options: "light", "dark", or custom
+  social_links:    # Add links to your social profiles
+    github: "https://github.com/micah-juiye"
+    linkedin: "https://linkedin.com/in/micah-juiye"
+    instagram: "https://instagram.com/yourusername"
